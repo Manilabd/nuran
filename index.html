@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ur Movie HD - Watch Movies Online</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-container">
+        <h1 class="site-logo">Ur Movie HD</h1>
+        <p class="site-tagline">Watch Movies Online</p>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Genres</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="search-toggle" aria-label="Search">
+          <i data-lucide="search"></i>
+        </button>
+        <button class="mobile-menu-toggle" aria-label="Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <input type="text" placeholder="Search for movies..." class="search-input">
+      <button class="search-close" aria-label="Close Search">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <h2>Menu</h2>
+      <button class="mobile-menu-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Genres</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-label">New Release</span>
+        <h2 class="hero-title">Dune: Part Two</h2>
+        <div class="hero-meta">
+          <span class="rating"><i data-lucide="star"></i> 8.7/10</span>
+          <span class="duration"><i data-lucide="clock"></i> 166 min</span>
+          <span class="year"><i data-lucide="calendar"></i> 2024</span>
+        </div>
+        <p class="hero-description">Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary"><i data-lucide="play"></i> Watch Trailer</a>
+          <a href="#" class="btn btn-secondary"><i data-lucide="info"></i> More Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Trending Section -->
+    <section class="movie-section">
+      <div class="section-header">
+        <h2 class="section-title">Trending Now</h2>
+        <a href="#" class="view-all">View All <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="movie-grid">
+        <!-- Movie Card 1 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg" alt="Movie Poster">
+            <div class="movie-overlay">
+              <a href="#" class="btn-play"><i data-lucide="play"></i></a>
+            </div>
+            <span class="movie-rating">9.2</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">The Dark Knight</h3>
+            <div class="movie-meta">
+              <span class="movie-genre">Action, Crime</span>
+              <span class="movie-year">2008</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Movie Card 2 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="https://images.pexels.com/photos/4100130/pexels-photo-4100130.jpeg" alt="Movie Poster">
+            <div class="movie-overlay">
+              <a href="#" class="btn-play"><i data-lucide="play"></i></a>
+            </div>
+            <span class="movie-rating">8.7</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Interstellar</h3>
+            <div class="movie-meta">
+              <span class="movie-genre">Sci-Fi, Adventure</span>
+              <span class="movie-year">2014</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Movie Card 3 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="https://images.pexels.com/photos/6447217/pexels-photo-6447217.jpeg" alt="Movie Poster">
+            <div class="movie-overlay">
+              <a href="#" class="btn-play"><i data-lucide="play"></i></a>
+            </div>
+            <span class="movie-rating">8.5</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Inception</h3>
+            <div class="movie-meta">
+              <span class="movie-genre">Sci-Fi, Action</span>
+              <span class="movie-year">2010</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Movie Card 4 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="https://images.pexels.com/photos/5662857/pexels-photo-5662857.png" alt="Movie Poster">
+            <div class="movie-overlay">
+              <a href="#" class="btn-play"><i data-lucide="play"></i></a>
+            </div>
+            <span class="movie-rating">8.8</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">The Shawshank Redemption</h3>
+            <div class="movie-meta">
+              <span class="movie-genre">Drama</span>
+              <span class="movie-year">1994</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Releases Section -->
+    <section class="movie-section">
+      <div class="section-header">
+        <h2 class="section-title">Latest Releases</h2>
+        <a href="#" class="view-all">View All <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="movie-grid">
+        <!-- Movie Card 5 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg" alt="Movie Poster">
+            <div class="movie-overlay">
+              <a href="#" class="btn-play"><i data-lucide="play"></i></a>
+            </div>
+            <span class="movie-rating">7.9</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Oppenheimer</h3>
+            <div class="movie-meta">
+              <span class="movie-genre">Biography, Drama</span>
+              <span class="movie-year">2023</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Movie Card 6 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="https://images.pexels.com/photos/7234213/pexels-photo-7234213.jpeg" alt="Movie Poster">
+            <div class="movie-overlay">
+              <a href="#" class="btn-play"><i data-lucide="play"></i></a>
+            </div>
+            <span class="movie-rating">8.1</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Barbie</h3>
+            <div class="movie-meta">
+              <span class="movie-genre">Comedy, Adventure</span>
+              <span class="movie-year">2023</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Movie Card 7 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="https://images.pexels.com/photos/5083711/pexels-photo-5083711.jpeg" alt="Movie Poster">
+            <div class="movie-overlay">
+              <a href="#" class="btn-play"><i data-lucide="play"></i></a>
+            </div>
+            <span class="movie-rating">7.5</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Killers of the Flower Moon</h3>
+            <div class="movie-meta">
+              <span class="movie-genre">Crime, Drama</span>
+              <span class="movie-year">2023</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Movie Card 8 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg" alt="Movie Poster">
+            <div class="movie-overlay">
+              <a href="#" class="btn-play"><i data-lucide="play"></i></a>
+            </div>
+            <span class="movie-rating">7.8</span>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Poor Things</h3>
+            <div class="movie-meta">
+              <span class="movie-genre">Sci-Fi, Romance</span>
+              <span class="movie-year">2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Genres Section -->
+    <section class="genres-section">
+      <div class="section-header">
+        <h2 class="section-title">Browse by Genre</h2>
+      </div>
+      <div class="genres-grid">
+        <a href="#" class="genre-card" style="background-image: url('https://images.pexels.com/photos/4200740/pexels-photo-4200740.jpeg')">
+          <span class="genre-name">Action</span>
+        </a>
+        <a href="#" class="genre-card" style="background-image: url('https://images.pexels.com/photos/3945317/pexels-photo-3945317.jpeg')">
+          <span class="genre-name">Comedy</span>
+        </a>
+        <a href="#" class="genre-card" style="background-image: url('https://images.pexels.com/photos/7991486/pexels-photo-7991486.jpeg')">
+          <span class="genre-name">Drama</span>
+        </a>
+        <a href="#" class="genre-card" style="background-image: url('https://images.pexels.com/photos/4612170/pexels-photo-4612170.jpeg')">
+          <span class="genre-name">Horror</span>
+        </a>
+        <a href="#" class="genre-card" style="background-image: url('https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg')">
+          <span class="genre-name">Sci-Fi</span>
+        </a>
+        <a href="#" class="genre-card" style="background-image: url('https://images.pexels.com/photos/7272870/pexels-photo-7272870.jpeg')">
+          <span class="genre-name">Romance</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+      <div class="featured-movie">
+        <div class="featured-content">
+          <span class="featured-label">Editor's Pick</span>
+          <h2 class="featured-title">The Batman</h2>
+          <div class="featured-meta">
+            <span class="rating"><i data-lucide="star"></i> 8.0/10</span>
+            <span class="duration"><i data-lucide="clock"></i> 176 min</span>
+            <span class="year"><i data-lucide="calendar"></i> 2022</span>
+          </div>
+          <p class="featured-description">When the Riddler, a sadistic serial killer, begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.</p>
+          <div class="featured-actions">
+            <a href="#" class="btn btn-primary"><i data-lucide="play"></i> Watch Trailer</a>
+            <a href="#" class="btn btn-secondary"><i data-lucide="info"></i> Read Review</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <h2 class="newsletter-title">Never Miss a Release</h2>
+          <p class="newsletter-description">Subscribe to our newsletter and get notified about new movie uploads, exclusive content, and more!</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Blog Post -->
+  <article class="blog-post">
+    <div class="post-header">
+      <h2 class="post-title">Top 10 Must-Watch Movies of 2024 So Far</h2>
+      <div class="post-meta">
+        <span class="post-date"><i data-lucide="calendar"></i> April 15, 2024</span>
+        <span class="post-author"><i data-lucide="user"></i> By Admin</span>
+        <span class="post-comments"><i data-lucide="message-circle"></i> 24 Comments</span>
+      </div>
+    </div>
+    <div class="post-content">
+      <p>The first quarter of 2024 has already delivered some incredible films that are worthy of your attention. From thrilling action sequences to thought-provoking dramas, this year's releases have something for everyone. Here's our roundup of the must-watch movies of 2024 so far...</p>
+      <a href="#" class="read-more">Continue Reading <i data-lucide="arrow-right"></i></a>
+    </div>
+  </article>
+
+  <!-- Comments Section -->
+  <section class="comments-section">
+    <h2 class="comments-title">Comments (24)</h2>
+    <div class="comments-container">
+      <div class="comment">
+        <div class="comment-avatar">
+          <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" alt="User Avatar">
+        </div>
+        <div class="comment-content">
+          <div class="comment-header">
+            <h4 class="comment-author">John Doe</h4>
+            <span class="comment-date">April 16, 2024</span>
+          </div>
+          <p class="comment-text">Great list! I would also add "The Fall Guy" to this list. Ryan Gosling and Emily Blunt have amazing chemistry in that film.</p>
+          <div class="comment-actions">
+            <button class="btn-reply">Reply</button>
+            <button class="btn-like"><i data-lucide="heart"></i> 12</button>
+          </div>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="comment-avatar">
+          <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" alt="User Avatar">
+        </div>
+        <div class="comment-content">
+          <div class="comment-header">
+            <h4 class="comment-author">Jane Smith</h4>
+            <span class="comment-date">April 15, 2024</span>
+          </div>
+          <p class="comment-text">I watched Dune: Part Two yesterday and was completely blown away. Denis Villeneuve has created a masterpiece. The visuals, sound design, and performances are all top-notch.</p>
+          <div class="comment-actions">
+            <button class="btn-reply">Reply</button>
+            <button class="btn-like"><i data-lucide="heart"></i> 8</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comment-form-container">
+      <h3 class="form-title">Leave a Comment</h3>
+      <form class="comment-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea id="comment" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Post Comment</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <h2>Ur Movie HD</h2>
+          <p>Watch Movies Online</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-column">
+            <h3>Navigate</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">TV Shows</a></li>
+              <li><a href="#">Genres</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ur Movie HD. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+    
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.add('active');
+    });
+    
+    document.querySelector('.mobile-menu-close').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.remove('active');
+    });
+    
+    // Search toggle
+    document.querySelector('.search-toggle').addEventListener('click', () => {
+      document.getElementById('searchOverlay').classList.add('active');
+      document.querySelector('.search-input').focus();
+    });
+    
+    document.querySelector('.search-close').addEventListener('click', () => {
+      document.getElementById('searchOverlay').classList.remove('active');
+    });
+  </script>
+</body>
+</html>
